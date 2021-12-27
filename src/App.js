@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './pages/Welcome';
+import PlanLayout from './pages/Layout/PlanLayout';
+import { BrowserRouter, Route } from 'react-router-dom';
+import React from 'react';
+import PhoneConfirmation from './pages/PhoneConfirmation';
+
+// <PlanLayout>
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <BrowserRouter>
+  <PlanLayout>
+  <Route exact path='/' component={Welcome} />
+  <Route exact path='/invite' component={PhoneConfirmation} />
+  </PlanLayout>
+  </BrowserRouter>
   );
 }
 
