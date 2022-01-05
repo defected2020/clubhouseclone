@@ -13,3 +13,36 @@ body {
   font-size: 1em;
   font-family: "Neutrif Pro";
 }
+
+button {
+  outline: none !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.primaryBtn {
+  background-color: var(--btnBgColor);
+  color: #ffffff;
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+.small-button {
+  width: 20px;
+  height: 20px;
+}
+
+.app-layout {
+  background-color: #f2f0e4;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
