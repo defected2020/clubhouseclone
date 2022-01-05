@@ -5,7 +5,6 @@ import { BsChatDots, BsChatDotsFill, BsFillPersonFill } from "react-icons/bs";
 export default function RoomInfoCard(props) {
   return (
     <>
-      <h2>I am the room info card </h2>
       {data.map(item => (
         <div>
           <div>
