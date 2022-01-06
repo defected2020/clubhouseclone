@@ -32,7 +32,7 @@ export default function StartRoom(props) {
         </button>
 
         <button
-          className={room == "social" ? style.active : ""}
+          className={room == "closed" ? style.active : ""}
           onClick={() => setRoom("closed")}
         >
           <div>
@@ -48,7 +48,7 @@ export default function StartRoom(props) {
             ? "for people I choose"
             : room == "social"
             ? "with people I follow"
-            : "open to everone"}
+            : "open to everyone"}
         </span>
       </p>
       <div className="text-center">
