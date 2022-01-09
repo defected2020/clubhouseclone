@@ -43,5 +43,17 @@
   },
   "devDependencies": {
     "eslint": "^5.6.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defected2020/clubhouseclone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defected2020/clubhouseclone/issues"
+  },
+  "homepage": "https://github.com/defected2020/clubhouseclone#readme"
 }

@@ -16,6 +16,24 @@ export default function Home() {
   const [cardId, setcardId] = useState(1);
   return (
     <>
+      {loaderVisibility ? (
+        <div
+          style={{
+            position: "fixed",
+            top: "0",
+            right: "0",
+            bottom: "0",
+            left: "0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <img src="/images/loader.gif" alt="" />
+        </div>
+      ) : (
+        ""
+      )}
       <Header />
       <div className={style.home_container}>
         <DailyInfoCard />
