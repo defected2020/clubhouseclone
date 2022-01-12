@@ -5,6 +5,7 @@ import StartRoom from "./bottom_sheets/StartRoom";
 import NewRoom from "./bottom_sheets/NewRoom";
 
 export default function BottomSheet(props) {
+  console.log(props.cardDetail);
   return (
     <SwipeableBottomSheet
       open={props.sheetVisible}
@@ -27,6 +28,7 @@ export default function BottomSheet(props) {
               props.setSheetVisible(item);
               props.setItemsVisible(true);
             }}
+            cardDetail={props.cardDetail}
           />
         ) : props.sheetTitle == "start room" ? (
           <StartRoom

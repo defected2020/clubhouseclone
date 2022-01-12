@@ -15,6 +15,7 @@ export default function Home() {
   const [sheetCreateRoom, setSheetCreateRoom] = useState(false);
   const [loaderVisibility, setLoaderVisibility] = useState(false);
   const [cardId, setcardId] = useState(1);
+  console.log(newRoomData);
   return (
     <>
       {loaderVisibility ? (
@@ -63,6 +64,7 @@ export default function Home() {
           }, 1000);
         }}
       />
+
       <BottomSheet
         sheetTitle="new room"
         setSheetVisible={item => setSheetCreateRoom(item)}
