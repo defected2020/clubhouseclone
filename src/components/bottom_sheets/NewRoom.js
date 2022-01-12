@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import style from "../../style/roomDetail.module.css";
-import { AiOutlineFile } from "react-icons/ai";
-import { BsMicMuteFill } from "react-icons/bs";
+import { AiOutlineFile, AiOutlinePlus } from "react-icons/ai";
+import { BsMicMuteFill, BsMicFill } from "react-icons/bs";
 
 export default function NewRoom(props) {
   const [micMuteVisible, setMicMuteVisible] = useState(false);
+  const [itemsVisible, setItemsVisible] = useState(true);
   const card = props.cardDetail;
 
   console.log(card);
@@ -52,6 +53,28 @@ export default function NewRoom(props) {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+        <div className={style.footer}>
+          <button
+            onClick={() => {
+              props.setSheetVisible(false);
+            }}
+          >
+            <img src="/images/peace-hand.png" alt="" />
+            Leave Quietly
+          </button>
+          <div>
+            <button>
+              <AiOutlinePlus />
+            </button>
+
+            <button>
+              <img src="/images/stop-hand.png" />
+            </button>
+            <button onClick={() => setMicMuteVisible(!micMuteVisible)}>
+              {micMuteVisible ? <BsMicMuteFill /> : <BsMicFill />}
+            </button>
           </div>
         </div>
       </div>
