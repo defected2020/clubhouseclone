@@ -145,7 +145,7 @@
 }
 
 .head {
-  text-align: center;
+  text-align: right;
   padding: 0.5em 0.5em;
   position: relative;
   margin-bottom: 0.5em;
@@ -154,4 +154,5 @@
 .head h3 {
   margin: 0;
   font-size: 1.2em;
+  text-align: center;
 }
